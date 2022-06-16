@@ -251,3 +251,12 @@
     border-radius: 20px;
 
 }
+
+#buttonADD{
+    color: #FFF;
+    background-color: #ed5192;
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: 50%;
+    width: 100px;
+}
