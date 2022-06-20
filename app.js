@@ -1,12 +1,12 @@
-const express = require('express');
-const exphbs = require('express-handlebars');
-const app = express();
-const path = require('path');
-const db = require('./db/connection');
+const express   = require('express');
+const exphbs    = require('express-handlebars');
+const app       = express();
+const path      = require('path');
+const db        = require('./db/connection');
 const bodyParser = require('body-parser');
-const Evento = require('./models/evento');
-const Sequelize = require('sequelize');
-const Op = Sequelize.Op;
+const Evento     = require('./models/evento');
+const Sequelize  = require('sequelize');
+const Op         = Sequelize.Op;
 
 const PORT = 3000;
 
@@ -39,7 +39,33 @@ db
 
 // routes
 app.get('/', (req, res) => {
-    res.send("está funcionando 3")
+
+    let search = req.query.evento;
+    let query = '%'+search+'%'; //faz as buscas tipo : Samba -> sampa etc..
+    
+    if(!search){
+    Evento.findAll({order: [
+            ['createdAt', 'DESC']
+]})
+        .then(eventos => {
+            res.render('index', {
+                eventos
+            });
+        })
+        .catch(err=> console.log(err));
+    } else{
+        Evento.findAll({
+            where: {title:{[Op.like]: query}},
+            order: [
+            ['createdAt', 'DESC']
+]})
+        .then(eventos => {
+            res.render('index', {
+                eventos, search
+            })
+        })
+        .catch(err=> console.log(err));
+    }
 
 });
 

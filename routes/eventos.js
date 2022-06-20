@@ -20,7 +20,7 @@ router.get('/view/:id', (req, res) => Evento.findOne({
 }).catch(err => console.log(err)));
 
 // form da rota de envio
-router.get('add', (req, res) => {
+router.get('/add', (req, res) => {
   res.render('add');
 })
 

@@ -53,7 +53,7 @@
 
 .nav-link.btn.btn-primary:hover,
 #search-form button:hover,
-.list-group-item a:hover {
+.list-group-item a:hover, #form-box button:hover{
     background-color: #fff;
     color: #d6205f;
     border-color: #d6205f;
@@ -105,10 +105,11 @@
     height: 50px;
     font-size: 18px;
     
+    
 }
 
 #search-form button {
-    color: #FFF;
+    
     background-color: #ed5192;
     border: 1px solid transparent;
     position: absolute;
@@ -259,4 +260,49 @@
     position: absolute;
     bottom: 50%;
     width: 100px;
+}
+
+
+/*add page */
+
+#add-form-container{
+    margin-top: 100px
+}
+
+#form-box{
+    padding: 50px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
+    border-radius:  4px;
+    background-color: #FFF;
+    margin-bottom: 50px;    
+}
+
+#add-form-container h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color : #ed5192;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#add-form-container h1{
+    margin-bottom: 1px;
+
+}
+
+#add-form-container form label{
+    font-weight: bold;
+}
+
+#add-forma-container form input, #add-form-container form textarea{
+    border: 2px solid #ccc;
+    background-color: #f8f9fa;
+}
+
+#form-box button{
+    height: 50px;
+    width: 200px;
+    background-color: #d6205f;
+    border-radius: 2;
+    margin-top: 20px;
 }
