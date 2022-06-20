@@ -18,16 +18,17 @@
                 {{#if search}}
                  <h2 id="evento-list-title">Buscando evento que contem: {{search}}</h2>
                 {{else}}
+                
                 {{/if}}
                 <ul id="evento-list" class="list-group">
                     {{#each eventos}}
-                    <li class="list-group-item {{#if dataValue.new_evento}}new-evento{{/if}}">
-                        <img src="\img\museu.jpg" alt="Site">
+                    <li class="list-group-item {{#if dataValues.new_evento}}new-evento{{/if}}">
+                        <img src="\img\banner.jpg" alt="Site">
                         <p>{{dataValues.company}}</p>
                         <h2>{{dataValues.title}}</h2>
                         <p>R${{dataValues.value}}</p>
                         <span class="new-evento-label">Novo</span>
-                        <a href="./Museu da Língua Portuguesa.html" class="btn btn-primary">Ver evento</a>
+                        <a class="btn btn-primary" href="/eventos/view/{{dataValues.id}}" >Ver evento</a>
                     </li>
                     {{/each}}
                 </ul>

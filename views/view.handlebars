@@ -1,0 +1,18 @@
+<div id="evento-view-container" class="container">
+    <div class="row text-center">
+        <a class ="back-link main-color"href="/">Voltar</a>
+        <div id="img-container" class="colm-md-12">
+            <img src="/img/banner.jpg" alt="banner">
+        </div>
+        <div class="col-md-12">
+            <h1 class="main-color">{{evento.dataValues.title}}</h1>
+                <p class="bold">Descrição do evento:</p>
+                <p class="evento-desc">{{evento.dataValues.description}}</p>
+                               <p ><span class="bold">Data do evento: </span> {{evento.dataValues.date}}</p>
+                <p ><span class="bold">O valor do ingresso é de: </span> RS${{evento.dataValues.value}}</p>
+                <p>
+                    para acessar o site da compra do ingreço acesse:  <span class="bold main-color"> {{evento.dataValues.site}}</span>
+                </p>
+        </div>
+    </div>
+</div>

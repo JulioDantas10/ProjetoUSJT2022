@@ -67,7 +67,7 @@
     background-color: #F7F9FC;
     border-bottom: 4px solid #dde0f4;
     margin-bottom: 30px;
-    background-image: url("C:/Users/Larissa/Desktop/Projeto-USJT/Projeto-USJT/public/img/teste1.jpg");
+    background-image: url("../img/teste1.jpg");
     background-position: 0 0px;
     background-size: auto;
     color: rgb(255, 255, 255);
@@ -241,10 +241,12 @@
 
 
 #evento {
+ 
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    opacity: 0.5;
+    opacity: 1;
     border-color: #d6205f;
+  
 }
 
 #evento:hover {

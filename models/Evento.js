@@ -3,7 +3,7 @@ const db = require('../db/connection');
 
 const Evento = db.define('evento', {
     title: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
     },
     value: {
         type: Sequelize.INTEGER,
