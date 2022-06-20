@@ -31,7 +31,7 @@
     position: absolute;
     left: 92%;
     top: 5px;
-  
+
 }
 
 .nav-link {
@@ -41,7 +41,7 @@
     left: 86%;
     top: 5px;
     background-color: #ed5192;
-   
+
 }
 
 .nav-link:hover {
@@ -53,11 +53,12 @@
 
 .nav-link.btn.btn-primary:hover,
 #search-form button:hover,
-.list-group-item a:hover, #form-box button:hover{
+.list-group-item a:hover,
+#form-box button:hover {
     background-color: #fff;
     color: #d6205f;
     border-color: #d6205f;
-   
+
 
 }
 
@@ -101,21 +102,21 @@
 #search-form input,
 #search-form button {
     width: 100%;
-    border-radius: 0;
+    border-radius: 15px;
     height: 50px;
     font-size: 18px;
-    
-    
+
+
 }
 
 #search-form button {
-    
+
     background-color: #ed5192;
     border: 1px solid transparent;
     position: absolute;
     width: 160px;
     left: 76.4%;
-    border-radius: 3px;
+    border-radius: 5px;
     top: 438px;
 }
 
@@ -241,12 +242,12 @@
 
 
 #evento {
- 
+
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     opacity: 1;
     border-color: #d6205f;
-  
+
 }
 
 #evento:hover {
@@ -255,7 +256,7 @@
 
 }
 
-#buttonADD{
+#buttonADD {
     color: #FFF;
     background-color: #ed5192;
     border: 1px solid transparent;
@@ -267,44 +268,55 @@
 
 /*add page */
 
-#add-form-container{
+#add-form-container {
     margin-top: 100px
 }
 
-#form-box{
+#form-box {
     padding: 50px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
-    border-radius:  4px;
+    border-radius: 4px;
     background-color: #FFF;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
 }
 
 #add-form-container h2 {
     font-weight: bold;
     font-size: 24px;
-    color : #ed5192;
+    color: #ed5192;
     margin-bottom: 30px;
     text-align: center;
 }
 
-#add-form-container h1{
+#add-form-container h1 {
     margin-bottom: 1px;
 
 }
 
-#add-form-container form label{
+#add-form-container form label {
     font-weight: bold;
 }
 
-#add-forma-container form input, #add-form-container form textarea{
+#add-forma-container form input,
+#add-form-container form textarea {
     border: 2px solid #ccc;
     background-color: #f8f9fa;
 }
 
-#form-box button{
+#form-box button {
     height: 50px;
     width: 200px;
     background-color: #d6205f;
     border-radius: 2;
     margin-top: 20px;
 }
+
+
+
+#evento-view-container img {
+    width: 15%;
+}
+#evento-view-container a{
+    border-radius: 9px;
+}
+
